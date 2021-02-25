@@ -27,6 +27,7 @@
   以区块内的文字作为裁剪区域向外剪裁。文字的背景即为区块的背景，通常需要配合文字颜色设置为 transparent
 
 示例：
+
 ```css
 .text {
   color: transparent;
@@ -37,8 +38,36 @@
   font-size: 60px;
 }
 ```
-效果图
+
+效果图:
+
 ![效果图](../static/images/20210224155014.png)
 
 2. 使用 mask-image 属性
 
+示例
+
+```css
+.text {
+  color: red;
+  font-size: 60px;
+  position: relative;
+}
+.text[data-content]::after {
+  content: attr(data-content);
+  display: block;
+  color: yellow;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-mask-image: linear-gradient(180deg, yellow 0%, transparent 100%);
+  mask-image: linear-gradient(180deg, yellow 0%, transparent 100%);
+}
+```
+``` html
+<div class="text" data-content="content">content</div>
+```
+![效果图](../static/images/20210225133503.png)
+
+其实就是将一个黄色到透明渐变的文字覆盖到本身红色的字上面，mask-image兼容性要高于第一种方法
