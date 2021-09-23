@@ -8,7 +8,7 @@
 #### 原因：
 
 vue的构建版本分为：UMD， CommonJS，ES Module
-[https://cn.vuejs.org/v2/guide/installation.html]<!https://cn.vuejs.org/v2/guide/installation.html>
+[https://cn.vuejs.org/v2/guide/installation.html](https://cn.vuejs.org/v2/guide/installation.html)
 
 ![构建版本](../static/images/20210302103435.png)
 
