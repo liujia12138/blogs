@@ -1,4 +1,4 @@
-### 怎样实现一个控制台都删不掉的 DOM
+### 怎样实现一个控制台都删不掉的 DOM（做水印）
 
 #### MutationObserver
 
@@ -19,128 +19,62 @@ MutationObserver 构造函数会创建并返回一个新的 MutationObserver，�
 ```js
 const styleStr = `
       position: fixed;
-      bottom: 20px;
+      bottom: 150px;
       left: 200px;
       z-index: 9999;
+      transform: rotateZ(-45deg);
+      opacity: 0.6;
     `
-function createDiv(){
-  const ele = document.createElement('div')
-  ele.innerText = 'MutationObserver'
-  ele.setAttribute('id', 'test')
+const nodeId = sjs(10)
+
+createDiv()
+parentObserver()
+
+function createDiv() {
+  const ele = document.createElement('canvas')
+  const ctx = ele.getContext('2d')
+  ctx.fillText('MutationObserver', 15, 50)
+  // ele.id = nodeId
+  // ele.innerText = 'MutationObserver'
+  ele.setAttribute('id', nodeId)
+  ele.setAttribute('style', styleStr)
   document.body.appendChild(ele)
-  observe(ele)
+  wmObserver(ele)
 }
-createDiv();
-function observe (ele){new MutationObserver(function (mutationsList, observe) {
-  console.log(mutationsList, observe)
-  const target = mutationsList[0].target
-  target.setAttribute(
-    'style',
-    styleStr
-  )
-  observe.takeRecords()
-}).observe(ele, { attributes: true, childList: true, characterData: true })}
 
- new MutationObserver(function () {
-    var e = document.querySelector('#test')
+// wmObserver 监听水印
+function wmObserver(ele) {
+  new MutationObserver(function (mutationsList, observe) {
+    const target = mutationsList[0].target
+    target.setAttribute('style', styleStr)
+    observe.takeRecords()
+  }).observe(ele, { attributes: true, childList: true, characterData: true })
+}
+
+// parentObserver 监听父级
+function parentObserver() {
+  new MutationObserver(function () {
+    var e = document.querySelector('#' + nodeId)
+    console.log(e)
+    // 没有找到水印的dom就生成一个新的
     e ? e.getAttribute('style') !== styleStr && e.setAttribute('style', styleStr) : createDiv()
-}).observe(document.querySelector('#test').parentNode, { childList: !0 })
-
-function obs(t) {
-  var e = this,
-    n = { attributes: !0, childList: !0, characterData: !0 },
-    i = new MutationObserver(function (t) {
-      if (!e.isOberserve) {
-        var n = t[0].target
-        n.setAttribute('style', e.styleStr), n.setAttribute('id', e.CONTAINERID), i.takeRecords()
-      }
-    })
-  i.observe(t, n)
+  }).observe(document.querySelector('#' + nodeId).parentNode, { childList: true })
 }
-```
 
-```js
-function t() {
-  var e = this,
-    n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-  i(this, t),
-    (window.onload = function () {
-      ;(e.CONTAINERID = (0, o.randomId)()),
-        (e.drawCanvas = e.drawCanvas.bind(e)),
-        (e.parentObserver = e.parentObserver.bind(e)),
-        (e.Repaint = e.Repaint.bind(e)),
-        (e.isOberserve = !1),
-        e.init(n),
-        e.drawCanvas(),
-        e.parentObserver()
-    })
+//随机生成指定长度的字符串
+function sjs(leng) {
+  // 大写字母、小写字母、数字能出现的情况
+  var char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+  // 定义一个字符串接收随机生成的字符串
+  var chars = ''
+  // 遍历长度
+  for (var i = 0; i < leng; i++) {
+    // chars 的值为char中下标为随机数的值
+    // 这个随机数取值是Math.random()  0-1不到1
+    // Math.random()*char.length 0-1之间的数*char的长度，生成一个0-char.length之间的数,取整不包含最后一个，但是length长度为最大下标+1，所以不用加一
+    //最后用+来拼接
+    chars += char.charAt(parseInt(Math.random() * char.length))
+  }
+  return chars
 }
-return (
-  r(t, [
-    {
-      key: 'init',
-      value: function (t) {
-        ;(this.option = {}),
-          (this.option.text = t.text || '©2019-parent pig4cloud.com'),
-          (this.option.font = t.font || '14px 黑体'),
-          (this.option.canvasWidth = t.canvasWidth || 500),
-          (this.option.canvasHeight = t.canvasHeight || 200),
-          (this.option.textAlign = t.textAlign || 'center'),
-          (this.option.textStyle = t.textStyle || 'rgba(100,100,100,0.15)'),
-          (this.option.degree = t.degree || -20)
-      }
-    },
-    {
-      key: 'drawCanvas',
-      value: function () {
-        this.isOberserve = !0
-        var t = document.createElement('div')
-        ;(t.id = this.CONTAINERID),
-          (this.styleStr =
-            '\n            position:fixed;\n            bottom:0;\n            left:0;\n            width:100%;\n            height:40px;\n            text-align:center;\n            z-index:9999;\n            pointer-events:none;'),
-          t.setAttribute('style', this.styleStr),
-          (t.innerHTML = ''),
-          document.body.appendChild(t),
-          this.wmObserver(t),
-          (this.isOberserve = !1)
-      }
-    },
-    {
-      key: 'wmObserver',
-      value: function (t) {
-        var e = this,
-          n = { attributes: !0, childList: !0, characterData: !0 },
-          i = new MutationObserver(function (t) {
-            if (!e.isOberserve) {
-              var n = t[0].target
-              n.setAttribute('style', e.styleStr), n.setAttribute('id', e.CONTAINERID), i.takeRecords()
-            }
-          })
-        i.observe(t, n)
-      }
-    },
-    {
-      key: 'parentObserver',
-      value: function () {
-        var t = this
-        new MutationObserver(function () {
-          if (!t.isOberserve) {
-            var e = document.querySelector('#' + t.CONTAINERID)
-            e ? e.getAttribute('style') !== t.styleStr && e.setAttribute('style', t.styleStr) : t.drawCanvas()
-          }
-        }).observe(document.querySelector('#' + this.CONTAINERID).parentNode, { childList: !0 })
-      }
-    },
-    {
-      key: 'Repaint',
-      value: function () {
-        var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        ;(this.isOberserve = !0), this.init(t)
-        var e = document.querySelector('#' + this.CONTAINERID)
-        e.parentNode.removeChild(e), this.drawCanvas()
-      }
-    }
-  ]),
-  t
-)
 ```

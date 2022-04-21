@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const styleStr = `
+      position: fixed;
+      bottom: 150px;
+      left: 200px;
+      z-index: 9999;
+      transform: rotateZ(-45deg);
+      opacity: 0.6;
+    `
+    const nodeId = sjs(10)
+
+    createDiv()
+    parentObserver()
+
+    function createDiv() {
+      const ele = document.createElement('canvas')
+      const ctx = ele.getContext("2d")
+      ctx.fillText('MutationObserver',15,50)
+      // ele.id = nodeId
+      // ele.innerText = 'MutationObserver'
+      ele.setAttribute('id', nodeId)
+      ele.setAttribute('style', styleStr)
+      document.body.appendChild(ele)
+      wmObserver(ele)
+    }
+
+    // wmObserver 监听水印
+    function wmObserver(ele) {
+      new MutationObserver(function (mutationsList, observe) {
+        const target = mutationsList[0].target
+        target.setAttribute('style', styleStr)
+        observe.takeRecords()
+      }).observe(ele, { attributes: true, childList: true, characterData: true })
+    }
+
+    // parentObserver 监听父级
+    function parentObserver() {
+      new MutationObserver(function () {
+        var e = document.querySelector('#' + nodeId)
+        console.log(e)
+        // 没有找到水印的dom就生成一个新的
+        e ? e.getAttribute('style') !== styleStr && e.setAttribute('style', styleStr) : createDiv()
+      }).observe(document.querySelector('#' + nodeId).parentNode, { childList: true })
+    }
+
+    //随机生成指定长度的字符串
+    function sjs(leng) {
+      // 大写字母、小写字母、数字能出现的情况
+      var char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+      // 定义一个字符串接收随机生成的字符串
+      var chars = ''
+      // 遍历长度
+      for (var i = 0; i < leng; i++) {
+        // chars 的值为char中下标为随机数的值
+        // 这个随机数取值是Math.random()  0-1不到1
+        // Math.random()*char.length 0-1之间的数*char的长度，生成一个0-char.length之间的数,取整不包含最后一个，但是length长度为最大下标+1，所以不用加一
+        //最后用+来拼接
+        chars += char.charAt(parseInt(Math.random() * char.length))
+      }
+      return chars
+    }
+  </script>
+</html>
