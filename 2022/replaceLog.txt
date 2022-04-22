@@ -1,0 +1,383 @@
+  
+    -----------------2022-01-11 14:59:29 -----------------
+    ./src/views/scf/dataCenter目录下共找到了94个文件，替换了85个。
+    
+src/views/scf/dataCenter/downData/contractInfo.vue,src/views/scf/dataCenter/downData/dealerData.vue,src/views/scf/dataCenter/downData/dealerIsClear.vue,src/views/scf/dataCenter/downData/dealerUnClear.vue,src/views/scf/dataCenter/downData/financeEnsure.vue,src/views/scf/dataCenter/downData/historyDataDown/historyDataQuery/index.vue,src/views/scf/dataCenter/downData/returnGoods.vue,src/views/scf/dataCenter/downData/sellAccount/detail.vue,src/views/scf/dataCenter/downData/sellAccount/index.vue,src/views/scf/dataCenter/downData/sellDelivery/detail.vue,src/views/scf/dataCenter/downData/sellDelivery/index.vue,src/views/scf/dataCenter/downData/sellInvoice/detail.vue,src/views/scf/dataCenter/downData/sellInvoice/index.vue,src/views/scf/dataCenter/downData/sellOrder/detail.vue,src/views/scf/dataCenter/downData/sellOrder/index.vue,src/views/scf/dataCenter/downData/sellPlan.vue,src/views/scf/dataCenter/downData/sellYuOrder/detail.vue,src/views/scf/dataCenter/downData/sellYuOrder/index.vue,src/views/scf/dataCenter/downData/taskMonitor/index.vue,src/views/scf/dataCenter/invoiceHistory/index.vue,src/views/scf/dataCenter/lowerData/annualSalePlan/index.vue,src/views/scf/dataCenter/lowerData/dealerData/index.vue,src/views/scf/dataCenter/lowerData/financeEnsure/index.vue,src/views/scf/dataCenter/lowerData/forcastOrder/index.vue,src/views/scf/dataCenter/lowerData/forcastOrderDetail/index.vue,src/views/scf/dataCenter/lowerData/lowerAccount/index.vue,src/views/scf/dataCenter/lowerData/lowerAccountDetail/index.vue,src/views/scf/dataCenter/lowerData/lowerContract/index.vue,src/views/scf/dataCenter/lowerData/lowerDelivery/index.vue,src/views/scf/dataCenter/lowerData/lowerDeliveryDetail/index.vue,src/views/scf/dataCenter/lowerData/lowerFinance/index.vue,src/views/scf/dataCenter/lowerData/lowerInvoice/index.vue,src/views/scf/dataCenter/lowerData/lowerInvoiceDetail/index.vue,src/views/scf/dataCenter/lowerData/lowerReceived/index.vue,src/views/scf/dataCenter/lowerData/lowerReceiving/index.vue,src/views/scf/dataCenter/lowerData/lowerReturn/index.vue,src/views/scf/dataCenter/lowerData/salesOrder/index.vue,src/views/scf/dataCenter/lowerData/salesOrderDetail/index.vue,src/views/scf/dataCenter/milkData/dayMilkCollection/index.vue,src/views/scf/dataCenter/milkData/purchaseInvoice/index.vue,src/views/scf/dataCenter/milkData/purchasePay/index.vue,src/views/scf/dataCenter/milkData/purchaseReceive/index.vue,src/views/scf/dataCenter/milkData/supplierBasicInfo/index.vue,src/views/scf/dataCenter/milkData/toCopeBeenClear/index.vue,src/views/scf/dataCenter/milkData/toCopeOutstanding/index.vue,src/views/scf/dataCenter/monitorData/bTsIncrementLog/index.vue,src/views/scf/dataCenter/monitorData/backBankLog/index.vue,src/views/scf/dataCenter/monitorData/eTsIncrementLog/index.vue,src/views/scf/dataCenter/monitorData/gTbusinessLog/index.vue,src/views/scf/dataCenter/monitorData/pushBankLog/index.vue,src/views/scf/dataCenter/monitorData/sTgroundLog/index.vue,src/views/scf/dataCenter/scfLowerData/annualSalePlan/index.vue,src/views/scf/dataCenter/scfLowerData/dealerData/index.vue,src/views/scf/dataCenter/scfLowerData/forcastOrder/index.vue,src/views/scf/dataCenter/scfLowerData/forcastOrderDetail/index.vue,src/views/scf/dataCenter/scfLowerData/lowerAccount/index.vue,src/views/scf/dataCenter/scfLowerData/lowerAccountDetail/index.vue,src/views/scf/dataCenter/scfLowerData/lowerContract/index.vue,src/views/scf/dataCenter/scfLowerData/lowerDelivery/index.vue,src/views/scf/dataCenter/scfLowerData/lowerDeliveryDetail/index.vue,src/views/scf/dataCenter/scfLowerData/lowerFinance/index.vue,src/views/scf/dataCenter/scfLowerData/lowerInvoice/index.vue,src/views/scf/dataCenter/scfLowerData/lowerInvoiceDetail/index.vue,src/views/scf/dataCenter/scfLowerData/lowerReceived/index.vue,src/views/scf/dataCenter/scfLowerData/lowerReceiving/index.vue,src/views/scf/dataCenter/scfLowerData/lowerReturn/index.vue,src/views/scf/dataCenter/scfLowerData/salesOrder/index.vue,src/views/scf/dataCenter/scfLowerData/salesOrderDetail/index.vue,src/views/scf/dataCenter/scfMilkData/dayMilkCollection/index.vue,src/views/scf/dataCenter/scfMilkData/historyDataDown/historyDataQuery/index.vue,src/views/scf/dataCenter/scfMilkData/purchaseInvoice/index.vue,src/views/scf/dataCenter/scfMilkData/purchasePay/index.vue,src/views/scf/dataCenter/scfMilkData/purchaseReceive/index.vue,src/views/scf/dataCenter/scfMilkData/supplierBasicInfo/index.vue,src/views/scf/dataCenter/scfMilkData/taskMonitor/index.vue,src/views/scf/dataCenter/scfMilkData/toCopeBeenClear/index.vue,src/views/scf/dataCenter/scfMilkData/toCopeOutstanding/index.vue,src/views/scf/dataCenter/scfUpstreamData/historyDataDown/historyDataQuery/index.vue,src/views/scf/dataCenter/scfUpstreamData/paymentInformation/index.vue,src/views/scf/dataCenter/scfUpstreamData/purchaseInvoice/index.vue,src/views/scf/dataCenter/scfUpstreamData/purchaseOrder/index.vue,src/views/scf/dataCenter/scfUpstreamData/purchaseReceive/index.vue,src/views/scf/dataCenter/scfUpstreamData/supplierHandlingIscleared/index.vue,src/views/scf/dataCenter/scfUpstreamData/taskMonitor/index.vue,src/views/scf/dataCenter/scfUpstreamData/vendorData/index.vue
+
+
+    
+    -----------------2022-01-11 15:17:05 -----------------
+    ./src/views/scf/downFinancing目录下共找到了31个文件，替换了23个。
+    
+src/views/scf/downFinancing/approvalLimitSearchResult/index.vue,src/views/scf/downFinancing/blackLogQuery/index.vue,src/views/scf/downFinancing/blackQuery/detail.vue,src/views/scf/downFinancing/blackQuery/index.vue,src/views/scf/downFinancing/creditQuery/index.vue,src/views/scf/downFinancing/drawQuery/index.vue,src/views/scf/downFinancing/historyDataQuery/index.vue,src/views/scf/downFinancing/noRegisterCustomer/index.vue,src/views/scf/downFinancing/productDistribution/index.vue,src/views/scf/downFinancing/recomFuncQuery/index.vue,src/views/scf/downFinancing/returnedMoneyAccount/detail.vue,src/views/scf/downFinancing/returnedMoneyAccount/index.vue,src/views/scf/downFinancing/specialAccount/index.vue,src/views/scf/downFinancing/userActive/detail.vue,src/views/scf/downFinancing/userActive/index.vue,src/views/scf/downFinancing/userRegister/detail.vue,src/views/scf/downFinancing/userRegister/index.vue,src/views/scf/downFinancing/warnHints/index.vue,src/views/scf/downFinancing/whiteLogQuery/index.vue,src/views/scf/downFinancing/whiteQuery/index.vue,src/views/scf/downFinancing/yuQuery/detail.vue,src/views/scf/downFinancing/yuQuery/index.vue,src/views/scf/downFinancing/yuqiQuery/index.vue
+    
+未匹配的：src/views/scf/downFinancing/creditQuery/detail.vue,src/views/scf/downFinancing/drawQuery/detail.vue,src/views/scf/downFinancing/recomFuncQuery/detail.vue,src/views/scf/downFinancing/repayQuery/index.vue,src/views/scf/downFinancing/warnHints/detail.vue,src/views/scf/downFinancing/warnHints/orderDetail.vue,src/views/scf/downFinancing/warnHints/productDetail.vue,src/views/scf/downFinancing/whiteQuery/detail.vue
+   
+    
+    -----------------2022-01-11 15:18:05 -----------------
+    ./src/views/scf/downFinancing目录下共找到了31个文件，替换了6个。
+    
+src/views/scf/downFinancing/creditQuery/detail.vue,src/views/scf/downFinancing/recomFuncQuery/detail.vue,src/views/scf/downFinancing/repayQuery/index.vue,src/views/scf/downFinancing/warnHints/detail.vue,src/views/scf/downFinancing/warnHints/orderDetail.vue,src/views/scf/downFinancing/warnHints/productDetail.vue
+    
+未匹配的：src/views/scf/downFinancing/approvalLimitSearchResult/index.vue,src/views/scf/downFinancing/blackLogQuery/index.vue,src/views/scf/downFinancing/blackQuery/detail.vue,src/views/scf/downFinancing/blackQuery/index.vue,src/views/scf/downFinancing/creditQuery/index.vue,src/views/scf/downFinancing/drawQuery/detail.vue,src/views/scf/downFinancing/drawQuery/index.vue,src/views/scf/downFinancing/historyDataQuery/index.vue,src/views/scf/downFinancing/noRegisterCustomer/index.vue,src/views/scf/downFinancing/productDistribution/index.vue,src/views/scf/downFinancing/recomFuncQuery/index.vue,src/views/scf/downFinancing/returnedMoneyAccount/detail.vue,src/views/scf/downFinancing/returnedMoneyAccount/index.vue,src/views/scf/downFinancing/specialAccount/index.vue,src/views/scf/downFinancing/userActive/detail.vue,src/views/scf/downFinancing/userActive/index.vue,src/views/scf/downFinancing/userRegister/detail.vue,src/views/scf/downFinancing/userRegister/index.vue,src/views/scf/downFinancing/warnHints/index.vue,src/views/scf/downFinancing/whiteLogQuery/index.vue,src/views/scf/downFinancing/whiteQuery/detail.vue,src/views/scf/downFinancing/whiteQuery/index.vue,src/views/scf/downFinancing/yuQuery/detail.vue,src/views/scf/downFinancing/yuQuery/index.vue,src/views/scf/downFinancing/yuqiQuery/index.vue
+
+
+    
+    -----------------2022-01-11 15:19:50 -----------------
+    ./src/views/scf/financingProduct目录下共找到了14个文件，替换了11个。
+    
+src/views/scf/financingProduct/milkProduct/clientWarn.vue,src/views/scf/financingProduct/milkProduct/financialApproval.vue,src/views/scf/financingProduct/milkProduct/index.vue,src/views/scf/financingProduct/milkProduct/intoTerms.vue,src/views/scf/financingProduct/milkProduct/proInfo.vue,src/views/scf/financingProduct/milkProduct/productBill.vue,src/views/scf/financingProduct/milkProduct/quantityCredit.vue,src/views/scf/financingProduct/milkProduct/sendSet.vue,src/views/scf/financingProduct/milkaudiTing/detail.vue,src/views/scf/financingProduct/milkaudiTing/index.vue,src/views/scf/financingProduct/pushProduct/index.vue
+    
+未匹配的：src/views/scf/financingProduct/milkProduct/creditAttachment.vue,src/views/scf/financingProduct/milkProduct/projectWarn.vue,src/views/scf/financingProduct/milkProduct/setSlidebar.vue
+
+
+    
+    -----------------2022-01-11 15:21:11 -----------------
+    ./src/views/scf/introduction目录下共找到了1个文件，替换了1个。
+    
+src/views/scf/introduction/index.vue
+    
+未匹配的：
+
+
+    
+    -----------------2022-01-11 15:21:29 -----------------
+    ./src/views/scf/milkFinancing目录下共找到了58个文件，替换了44个。
+    
+src/views/scf/milkFinancing/AuditingMilk/index.vue,src/views/scf/milkFinancing/allowDays/index.vue,src/views/scf/milkFinancing/approvalLimitSearchResult/index.vue,src/views/scf/milkFinancing/batchCreditCheck/index.vue,src/views/scf/milkFinancing/blackLogQuery/index.vue,src/views/scf/milkFinancing/creditCheckLog/index.vue,src/views/scf/milkFinancing/creditQuery/benefitLog.vue,src/views/scf/milkFinancing/creditQuery/checkDetail.vue,src/views/scf/milkFinancing/creditQuery/createApply.vue,src/views/scf/milkFinancing/creditQuery/detail.vue,src/views/scf/milkFinancing/creditQuery/index.vue,src/views/scf/milkFinancing/creditQuery/seeDetail.vue,src/views/scf/milkFinancing/drawQuery/index.vue,src/views/scf/milkFinancing/financialApprovalAuditing/detail.vue,src/views/scf/milkFinancing/financialApprovalAuditing/editDetail.vue,src/views/scf/milkFinancing/financialApprovalAuditing/index.vue,src/views/scf/milkFinancing/historyDataQuery/index.vue,src/views/scf/milkFinancing/invoiceAllow/index.vue,src/views/scf/milkFinancing/limitDistribution/index.vue,src/views/scf/milkFinancing/limitQuota/index.vue,src/views/scf/milkFinancing/nfcs/businessDetail.vue,src/views/scf/milkFinancing/nfcs/businessUpdate.vue,src/views/scf/milkFinancing/nfcs/index.vue,src/views/scf/milkFinancing/nfcs/personDetail.vue,src/views/scf/milkFinancing/nfcs/personUpdate.vue,src/views/scf/milkFinancing/noRegisterCustomer/index.vue,src/views/scf/milkFinancing/paymentProduct/index.vue,src/views/scf/milkFinancing/productDistribution/index.vue,src/views/scf/milkFinancing/qc/importcredit.vue,src/views/scf/milkFinancing/qc/importdrawing.vue,src/views/scf/milkFinancing/qc/importrepay.vue,src/views/scf/milkFinancing/qc/importrepayplan.vue,src/views/scf/milkFinancing/rateAuditing/index.vue,src/views/scf/milkFinancing/rateManagement/detail.vue,src/views/scf/milkFinancing/rateManagement/index.vue,src/views/scf/milkFinancing/recomFuncQuery/index.vue,src/views/scf/milkFinancing/userRegister/index.vue,src/views/scf/milkFinancing/warnHints/index.vue,src/views/scf/milkFinancing/whiteLogQuery/index.vue,src/views/scf/milkFinancing/whiteQuery/detail.vue,src/views/scf/milkFinancing/whiteQuery/index.vue,src/views/scf/milkFinancing/yuQuery/detail.vue,src/views/scf/milkFinancing/yuQuery/index.vue,src/views/scf/milkFinancing/yuqiQuery/index.vue
+    
+未匹配的：src/views/scf/milkFinancing/Test.vue,src/views/scf/milkFinancing/blackQuery/detail.vue,src/views/scf/milkFinancing/blackQuery/index.vue,src/views/scf/milkFinancing/creditCheckLog/detail.vue,src/views/scf/milkFinancing/drawQuery/CreateLoanApply.vue,src/views/scf/milkFinancing/drawQuery/LoanAudit.vue,src/views/scf/milkFinancing/drawQuery/LoanOtherWay.vue,src/views/scf/milkFinancing/drawQuery/UpdateLoanApply.vue,src/views/scf/milkFinancing/drawQuery/detail.vue,src/views/scf/milkFinancing/recomFuncQuery/detail.vue,src/views/scf/milkFinancing/repayQuery/index.vue,src/views/scf/milkFinancing/warnHints/detail.vue,src/views/scf/milkFinancing/warnHints/orderDetail.vue,src/views/scf/milkFinancing/warnHints/productDetail.vue
+
+
+    
+    -----------------2022-01-11 15:21:54 -----------------
+    ./src/views/scf/operate目录下共找到了10个文件，替换了5个。
+    
+src/views/scf/operate/logfile.vue,src/views/scf/operate/notice.vue,src/views/scf/operate/noticeScf.vue,src/views/scf/operate/sms/index.vue,src/views/scf/operate/sms/smsLogIndex.vue
+    
+未匹配的：src/views/scf/operate/noticeScfDetail.vue,src/views/scf/operate/noticedetail.vue,src/views/scf/operate/sms/smsAutoConfig.vue,src/views/scf/operate/sms/smsBusinessConfig.vue,src/views/scf/operate/sms/smsManualConfig.vue
+
+
+    
+    -----------------2022-01-11 15:24:23 -----------------
+    ./src/views/scf/product目录下共找到了25个文件，替换了20个。
+    
+src/views/scf/product/Auditing/index.vue,src/views/scf/product/downProduct/clientWarn.vue,src/views/scf/product/downProduct/index.vue,src/views/scf/product/downProduct/intoTerms.vue,src/views/scf/product/downProduct/proInfo.vue,src/views/scf/product/downProduct/productBill.vue,src/views/scf/product/downProduct/quantityCredit.vue,src/views/scf/product/downProduct/sendSet.vue,src/views/scf/product/downaudiTing/detail.vue,src/views/scf/product/downaudiTing/index.vue,src/views/scf/product/pushDataBook/index.vue,src/views/scf/product/upperProduct/clientWarn.vue,src/views/scf/product/upperProduct/index.vue,src/views/scf/product/upperProduct/intoTerms.vue,src/views/scf/product/upperProduct/proInfo.vue,src/views/scf/product/upperProduct/productBill.vue,src/views/scf/product/upperProduct/quantityCredit.vue,src/views/scf/product/upperProduct/sendSet.vue,src/views/scf/product/upperaudiTing/detail.vue,src/views/scf/product/upperaudiTing/index.vue
+    
+未匹配的：src/views/scf/product/downProduct/creditAttachment.vue,src/views/scf/product/downProduct/projectWarn.vue,src/views/scf/product/upperProduct/creditAttachment.vue,src/views/scf/product/upperProduct/projectWarn.vue,src/views/scf/product/upperProduct/setSlidebar.vue
+
+
+    
+    -----------------2022-01-11 15:24:53 -----------------
+    ./src/views/scf/reportForm目录下共找到了18个文件，替换了18个。
+    
+src/views/scf/reportForm/FinancingStatus/index.vue,src/views/scf/reportForm/bankProduct/index.vue,src/views/scf/reportForm/creditUseCount/index.vue,src/views/scf/reportForm/creditUseDetail/index.vue,src/views/scf/reportForm/financingAnalysis/index.vue,src/views/scf/reportForm/financingApply/index.vue,src/views/scf/reportForm/financingApplyBusiness/index.vue,src/views/scf/reportForm/inconformityBank/index.vue,src/views/scf/reportForm/inconformityBu/index.vue,src/views/scf/reportForm/inconformityriskControl/index.vue,src/views/scf/reportForm/loansReview/index.vue,src/views/scf/reportForm/overdueInventory/index.vue,src/views/scf/reportForm/progressDoorsill/index.vue,src/views/scf/reportForm/promoteProgress/index.vue,src/views/scf/reportForm/promotionAndhisNoActiveReport/index.vue,src/views/scf/reportForm/riskFund/index.vue,src/views/scf/reportForm/taskMonitor/index.vue,src/views/scf/reportForm/upperAccountAnalysis/index.vue
+    
+未匹配的：
+
+
+    
+    -----------------2022-01-11 15:25:23 -----------------
+    ./src/views/scf/RiskManagement目录下共找到了45个文件，替换了6个。
+    
+src/views/scf/RiskManagement/DataImport/produceCompany/OtherDataImport/index.vue,src/views/scf/RiskManagement/DataImport/produceCompany/financeDataImport/index.vue,src/views/scf/RiskManagement/DataImport/salesCompanydealer/financeDataImport/index.vue,src/views/scf/RiskManagement/DataImport/supplierMaterial/IndustrySetting/index.vue,src/views/scf/RiskManagement/DataImport/supplierMaterial/financeDataImport/index.vue,src/views/scf/RiskManagement/DataImport/supplierMilk/financeDataImport/index.vue
+    
+未匹配的：src/views/scf/RiskManagement/RiskGather.vue,src/views/scf/RiskManagement/noAdmittance.vue,src/views/scf/RiskManagement/produceCompany/AdmittanceSetting/index.vue,src/views/scf/RiskManagement/produceCompany/AfterWarning/index.vue,src/views/scf/RiskManagement/produceCompany/AfterWarningResult/index.vue,src/views/scf/RiskManagement/produceCompany/AfterWarningSetting/index.vue,src/views/scf/RiskManagement/produceCompany/PreloanAdmittance/index.vue,src/views/scf/RiskManagement/produceCompany/PreloanAdmittanceResult/index.vue,src/views/scf/RiskManagement/produceCompany/PreloanScore/index.vue,src/views/scf/RiskManagement/produceCompany/PreloanScoreResult/index.vue,src/views/scf/RiskManagement/produceCompany/PreloanScoreSetting/index.vue,src/views/scf/RiskManagement/salesCompanydealer/AdmittanceSetting/index.vue,src/views/scf/RiskManagement/salesCompanydealer/AfterWarning/index.vue,src/views/scf/RiskManagement/salesCompanydealer/AfterWarningResult/index.vue,src/views/scf/RiskManagement/salesCompanydealer/AfterWarningSetting/index.vue,src/views/scf/RiskManagement/salesCompanydealer/DealerFilter/index.vue,src/views/scf/RiskManagement/salesCompanydealer/PreloanAdmittance/index.vue,src/views/scf/RiskManagement/salesCompanydealer/PreloanAdmittanceResult/index.vue,src/views/scf/RiskManagement/salesCompanydealer/PreloanScore/index.vue,src/views/scf/RiskManagement/salesCompanydealer/PreloanScoreResult/index.vue,src/views/scf/RiskManagement/salesCompanydealer/PreloanScoreSetting/index.vue,src/views/scf/RiskManagement/supplierMaterial/AdmittanceSetting/index.vue,src/views/scf/RiskManagement/supplierMaterial/AfterWarning/index.vue,src/views/scf/RiskManagement/supplierMaterial/AfterWarningResult/index.vue,src/views/scf/RiskManagement/supplierMaterial/AfterWarningSetting/index.vue,src/views/scf/RiskManagement/supplierMaterial/PreloanAdmittance/index.vue,src/views/scf/RiskManagement/supplierMaterial/PreloanAdmittanceResult/index.vue,src/views/scf/RiskManagement/supplierMaterial/PreloanScore/index.vue,src/views/scf/RiskManagement/supplierMaterial/PreloanScoreResult/index.vue,src/views/scf/RiskManagement/supplierMaterial/PreloanScoreSetting/index.vue,src/views/scf/RiskManagement/supplierMilk/AdmittanceSetting/index.vue,src/views/scf/RiskManagement/supplierMilk/AfterWarning/index.vue,src/views/scf/RiskManagement/supplierMilk/AfterWarningResult/index.vue,src/views/scf/RiskManagement/supplierMilk/AfterWarningSetting/index.vue,src/views/scf/RiskManagement/supplierMilk/PreloanAdmittance/index.vue,src/views/scf/RiskManagement/supplierMilk/PreloanAdmittanceResult/index.vue,src/views/scf/RiskManagement/supplierMilk/PreloanScore/index.vue,src/views/scf/RiskManagement/supplierMilk/PreloanScoreResult/index.vue,src/views/scf/RiskManagement/supplierMilk/PreloanScoreSetting/index.vue
+
+
+    
+    -----------------2022-01-11 15:26:19 -----------------
+    ./src/views/scf/select目录下共找到了1个文件，替换了1个。
+    
+src/views/scf/select/index.vue
+    
+未匹配的：
+
+
+    
+    -----------------2022-01-11 15:26:33 -----------------
+    ./src/views/scf/svg-icons目录下共找到了1个文件，替换了0个。
+    
+
+    
+未匹配的：src/views/scf/svg-icons/index.vue
+
+
+    
+    -----------------2022-01-11 15:26:49 -----------------
+    ./src/views/scf/upperFinancing目录下共找到了30个文件，替换了22个。
+    
+src/views/scf/upperFinancing/allowDays/index.vue,src/views/scf/upperFinancing/approvalLimitSearchResult/index.vue,src/views/scf/upperFinancing/blackLogQuery/index.vue,src/views/scf/upperFinancing/blackQuery/index.vue,src/views/scf/upperFinancing/creditQuery/index.vue,src/views/scf/upperFinancing/drawQuery/index.vue,src/views/scf/upperFinancing/historyDataQuery/index.vue,src/views/scf/upperFinancing/invoiceAllow/index.vue,src/views/scf/upperFinancing/noRegisterCustomer/index.vue,src/views/scf/upperFinancing/productDistribution/index.vue,src/views/scf/upperFinancing/recomFuncQuery/index.vue,src/views/scf/upperFinancing/userActive/detail.vue,src/views/scf/upperFinancing/userActive/index.vue,src/views/scf/upperFinancing/userRegister/detail.vue,src/views/scf/upperFinancing/userRegister/index.vue,src/views/scf/upperFinancing/warnHints/index.vue,src/views/scf/upperFinancing/whiteLogQuery/index.vue,src/views/scf/upperFinancing/whiteQuery/detail.vue,src/views/scf/upperFinancing/whiteQuery/index.vue,src/views/scf/upperFinancing/yuQuery/detail.vue,src/views/scf/upperFinancing/yuQuery/index.vue,src/views/scf/upperFinancing/yuqiQuery/index.vue
+    
+未匹配的：src/views/scf/upperFinancing/blackQuery/detail.vue,src/views/scf/upperFinancing/creditQuery/detail.vue,src/views/scf/upperFinancing/drawQuery/detail.vue,src/views/scf/upperFinancing/recomFuncQuery/detail.vue,src/views/scf/upperFinancing/repayQuery/index.vue,src/views/scf/upperFinancing/warnHints/detail.vue,src/views/scf/upperFinancing/warnHints/orderDetail.vue,src/views/scf/upperFinancing/warnHints/productDetail.vue
+
+
+
+
+    -----------------2022-01-11 16:05:38 -----------------
+    ./src/views/scf/customer目录下共找到了14个文件，替换了6个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+src/views/scf/customer/accountnumber/index.vue,src/views/scf/customer/agency/index.vue,src/views/scf/customer/agencyName/index.vue,src/views/scf/customer/finance/index.vue,src/views/scf/customer/milkSupplierName/index.vue,src/views/scf/customer/supplierName/index.vue
+    
+未匹配的：src/views/scf/customer/agency/detail.vue,src/views/scf/customer/finance/detail.vue,src/views/scf/customer/finance/set.vue,src/views/scf/customer/finance/setLeft.vue,src/views/scf/customer/milkSupplier/detail.vue,src/views/scf/customer/milkSupplier/index.vue,src/views/scf/customer/supplier/detail.vue,src/views/scf/customer/supplier/index.vue
+
+
+    
+    -----------------2022-01-11 16:06:20 -----------------
+    ./src/views/scf/customer目录下共找到了14个文件，替换了3个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+src/views/scf/customer/agency/detail.vue,src/views/scf/customer/milkSupplier/detail.vue,src/views/scf/customer/supplier/detail.vue
+    
+未匹配的：src/views/scf/customer/accountnumber/index.vue,src/views/scf/customer/agency/index.vue,src/views/scf/customer/agencyName/index.vue,src/views/scf/customer/finance/detail.vue,src/views/scf/customer/finance/index.vue,src/views/scf/customer/finance/set.vue,src/views/scf/customer/finance/setLeft.vue,src/views/scf/customer/milkSupplier/index.vue,src/views/scf/customer/milkSupplierName/index.vue,src/views/scf/customer/supplier/index.vue,src/views/scf/customer/supplierName/index.vue
+
+
+    
+    -----------------2022-01-11 17:14:44 -----------------
+    ./src/views/scf/customer目录下共找到了14个文件，替换了0个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+
+    
+未匹配的：src/views/scf/customer/accountnumber/index.vue,src/views/scf/customer/agency/detail.vue,src/views/scf/customer/agency/index.vue,src/views/scf/customer/agencyName/index.vue,src/views/scf/customer/finance/detail.vue,src/views/scf/customer/finance/index.vue,src/views/scf/customer/finance/set.vue,src/views/scf/customer/finance/setLeft.vue,src/views/scf/customer/milkSupplier/detail.vue,src/views/scf/customer/milkSupplier/index.vue,src/views/scf/customer/milkSupplierName/index.vue,src/views/scf/customer/supplier/detail.vue,src/views/scf/customer/supplier/index.vue,src/views/scf/customer/supplierName/index.vue
+
+
+    
+    -----------------2022-01-11 17:16:52 -----------------
+    ./src/views/scf/customer目录下共找到了14个文件，替换了5个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+src/views/scf/customer/finance/detail.vue,src/views/scf/customer/finance/set.vue,src/views/scf/customer/finance/setLeft.vue,src/views/scf/customer/milkSupplier/index.vue,src/views/scf/customer/supplier/index.vue
+    
+未匹配的：src/views/scf/customer/accountnumber/index.vue,src/views/scf/customer/agency/detail.vue,src/views/scf/customer/agency/index.vue,src/views/scf/customer/agencyName/index.vue,src/views/scf/customer/finance/index.vue,src/views/scf/customer/milkSupplier/detail.vue,src/views/scf/customer/milkSupplierName/index.vue,src/views/scf/customer/supplier/detail.vue,src/views/scf/customer/supplierName/index.vue
+
+
+    
+    -----------------2022-01-19 10:21:19 -----------------
+    ./src/views/scf/customer目录下共找到了14个文件，替换了0个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template><script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+
+    
+未匹配的：src/views/scf/customer/accountnumber/index.vue,src/views/scf/customer/agency/detail.vue,src/views/scf/customer/agency/index.vue,src/views/scf/customer/agencyName/index.vue,src/views/scf/customer/finance/detail.vue,src/views/scf/customer/finance/index.vue,src/views/scf/customer/finance/set.vue,src/views/scf/customer/finance/setLeft.vue,src/views/scf/customer/milkSupplier/detail.vue,src/views/scf/customer/milkSupplier/index.vue,src/views/scf/customer/milkSupplierName/index.vue,src/views/scf/customer/supplier/detail.vue,src/views/scf/customer/supplier/index.vue,src/views/scf/customer/supplierName/index.vue
+
+
+    
+    -----------------2022-01-19 10:21:45 -----------------
+    ./src/views/bank目录下共找到了110个文件，替换了0个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template><script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+
+    
+未匹配的：src/views/bank/OfflineFinancing/creditQuery/index.vue,src/views/bank/OfflineFinancing/drawQuery/index.vue,src/views/bank/OfflineFinancing/repayQuery/index.vue,src/views/bank/OfflineFinancingStatistic/creditQuery/index.vue,src/views/bank/OfflineFinancingStatistic/drawQuery/index.vue,src/views/bank/OfflineFinancingStatistic/repayQuery/index.vue,src/views/bank/admin/notice/noticeDetail.vue,src/views/bank/admin/notice/noticeDetailDetail.vue,src/views/bank/admin/role/index.vue,src/views/bank/admin/taskMonitor/index.vue,src/views/bank/admin/user/detail.vue,src/views/bank/admin/user/index.vue,src/views/bank/customerIntroduction/bankDealerByStatusDetail.vue,src/views/bank/customerIntroduction/bankMilkByStatusDetail.vue,src/views/bank/customerIntroduction/bankSupplierByStatusDetail.vue,src/views/bank/customerIntroduction/index.vue,src/views/bank/customerPortal/tkQuery/index.vue,src/views/bank/customerPortal/tkQuery/notOrderDetail.vue,src/views/bank/customerPortal/tkQuery/orderDetail.vue,src/views/bank/customerPortal/tkQuery/resultQuery.vue,src/views/bank/downFinancing/approvalLimitSearchResult/index.vue,src/views/bank/downFinancing/creditQuery/detail.vue,src/views/bank/downFinancing/creditQuery/index.vue,src/views/bank/downFinancing/dealer/index.vue,src/views/bank/downFinancing/drawQuery/detail.vue,src/views/bank/downFinancing/drawQuery/index.vue,src/views/bank/downFinancing/historyDataQuery/index.vue,src/views/bank/downFinancing/incrementDataQuery/index.vue,src/views/bank/downFinancing/recomFuncQuery/index.vue,src/views/bank/downFinancing/repayQuery/index.vue,src/views/bank/downFinancing/returnedMoneyAccount/detail.vue,src/views/bank/downFinancing/returnedMoneyAccount/index.vue,src/views/bank/downFinancing/specialAccess/index.vue,src/views/bank/downFinancing/warnHints/detail.vue,src/views/bank/downFinancing/warnHints/index.vue,src/views/bank/downFinancing/warnHints/orderDetail.vue,src/views/bank/downFinancing/warnHints/productDetail.vue,src/views/bank/downFinancing/yuqiQuery/index.vue,src/views/bank/errorPage/401.vue,src/views/bank/errorPage/404.vue,src/views/bank/milkFinancing/approvalLimitSearchResult/index.vue,src/views/bank/milkFinancing/creditQuery/detail.vue,src/views/bank/milkFinancing/creditQuery/index.vue,src/views/bank/milkFinancing/drawQuery/detail.vue,src/views/bank/milkFinancing/drawQuery/index.vue,src/views/bank/milkFinancing/historyDataQuery/index.vue,src/views/bank/milkFinancing/incrementDataQuery/index.vue,src/views/bank/milkFinancing/milkSupplier/index.vue,src/views/bank/milkFinancing/recomFuncQuery/index.vue,src/views/bank/milkFinancing/repayQuery/index.vue,src/views/bank/milkFinancing/warnHints/detail.vue,src/views/bank/milkFinancing/warnHints/index.vue,src/views/bank/milkFinancing/warnHints/orderDetail.vue,src/views/bank/milkFinancing/warnHints/productDetail.vue,src/views/bank/milkFinancing/yuqiQuery/index.vue,src/views/bank/product/downProduct/clientWarn.vue,src/views/bank/product/downProduct/creditAttachment.vue,src/views/bank/product/downProduct/index.vue,src/views/bank/product/downProduct/intoTerms.vue,src/views/bank/product/downProduct/proInfo.vue,src/views/bank/product/downProduct/productBill.vue,src/views/bank/product/downProduct/projectWarn.vue,src/views/bank/product/downProduct/quantityCredit.vue,src/views/bank/product/downProduct/sendSet.vue,src/views/bank/product/downaudiTing/detail.vue,src/views/bank/product/downaudiTing/index.vue,src/views/bank/product/milkProduct/clientWarn.vue,src/views/bank/product/milkProduct/creditAttachment.vue,src/views/bank/product/milkProduct/financialApproval.vue,src/views/bank/product/milkProduct/index.vue,src/views/bank/product/milkProduct/intoTerms.vue,src/views/bank/product/milkProduct/proInfo.vue,src/views/bank/product/milkProduct/productBill.vue,src/views/bank/product/milkProduct/projectWarn.vue,src/views/bank/product/milkProduct/quantityCredit.vue,src/views/bank/product/milkProduct/sendSet.vue,src/views/bank/product/milkProduct/setSlidebar.vue,src/views/bank/product/milkaudiTing/detail.vue,src/views/bank/product/milkaudiTing/index.vue,src/views/bank/product/upperProduct/clientWarn.vue,src/views/bank/product/upperProduct/creditAttachment.vue,src/views/bank/product/upperProduct/index.vue,src/views/bank/product/upperProduct/intoTerms.vue,src/views/bank/product/upperProduct/proInfo.vue,src/views/bank/product/upperProduct/productBill.vue,src/views/bank/product/upperProduct/projectWarn.vue,src/views/bank/product/upperProduct/quantityCredit.vue,src/views/bank/product/upperProduct/sendSet.vue,src/views/bank/product/upperProduct/setSlidebar.vue,src/views/bank/product/upperaudiTing/detail.vue,src/views/bank/product/upperaudiTing/index.vue,src/views/bank/pushManage/financing/index.vue,src/views/bank/pushManage/supplier/index.vue,src/views/bank/svg-icons/index.vue,src/views/bank/upperFinancing/approvalLimitSearchResult/index.vue,src/views/bank/upperFinancing/creditQuery/detail.vue,src/views/bank/upperFinancing/creditQuery/index.vue,src/views/bank/upperFinancing/drawQuery/detail.vue,src/views/bank/upperFinancing/drawQuery/index.vue,src/views/bank/upperFinancing/historyDataQuery/index.vue,src/views/bank/upperFinancing/incrementDataQuery/index.vue,src/views/bank/upperFinancing/invoiceHistory/index.vue,src/views/bank/upperFinancing/recomFuncQuery/index.vue,src/views/bank/upperFinancing/repayQuery/index.vue,src/views/bank/upperFinancing/supplier/index.vue,src/views/bank/upperFinancing/warnHints/detail.vue,src/views/bank/upperFinancing/warnHints/index.vue,src/views/bank/upperFinancing/warnHints/orderDetail.vue,src/views/bank/upperFinancing/warnHints/productDetail.vue,src/views/bank/upperFinancing/yuqiQuery/index.vue
+
+
+    
+    -----------------2022-01-19 10:22:09 -----------------
+    ./src/views/bank目录下共找到了110个文件，替换了0个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+
+    
+未匹配的：src/views/bank/OfflineFinancing/creditQuery/index.vue,src/views/bank/OfflineFinancing/drawQuery/index.vue,src/views/bank/OfflineFinancing/repayQuery/index.vue,src/views/bank/OfflineFinancingStatistic/creditQuery/index.vue,src/views/bank/OfflineFinancingStatistic/drawQuery/index.vue,src/views/bank/OfflineFinancingStatistic/repayQuery/index.vue,src/views/bank/admin/notice/noticeDetail.vue,src/views/bank/admin/notice/noticeDetailDetail.vue,src/views/bank/admin/role/index.vue,src/views/bank/admin/taskMonitor/index.vue,src/views/bank/admin/user/detail.vue,src/views/bank/admin/user/index.vue,src/views/bank/customerIntroduction/bankDealerByStatusDetail.vue,src/views/bank/customerIntroduction/bankMilkByStatusDetail.vue,src/views/bank/customerIntroduction/bankSupplierByStatusDetail.vue,src/views/bank/customerIntroduction/index.vue,src/views/bank/customerPortal/tkQuery/index.vue,src/views/bank/customerPortal/tkQuery/notOrderDetail.vue,src/views/bank/customerPortal/tkQuery/orderDetail.vue,src/views/bank/customerPortal/tkQuery/resultQuery.vue,src/views/bank/downFinancing/approvalLimitSearchResult/index.vue,src/views/bank/downFinancing/creditQuery/detail.vue,src/views/bank/downFinancing/creditQuery/index.vue,src/views/bank/downFinancing/dealer/index.vue,src/views/bank/downFinancing/drawQuery/detail.vue,src/views/bank/downFinancing/drawQuery/index.vue,src/views/bank/downFinancing/historyDataQuery/index.vue,src/views/bank/downFinancing/incrementDataQuery/index.vue,src/views/bank/downFinancing/recomFuncQuery/index.vue,src/views/bank/downFinancing/repayQuery/index.vue,src/views/bank/downFinancing/returnedMoneyAccount/detail.vue,src/views/bank/downFinancing/returnedMoneyAccount/index.vue,src/views/bank/downFinancing/specialAccess/index.vue,src/views/bank/downFinancing/warnHints/detail.vue,src/views/bank/downFinancing/warnHints/index.vue,src/views/bank/downFinancing/warnHints/orderDetail.vue,src/views/bank/downFinancing/warnHints/productDetail.vue,src/views/bank/downFinancing/yuqiQuery/index.vue,src/views/bank/errorPage/401.vue,src/views/bank/errorPage/404.vue,src/views/bank/milkFinancing/approvalLimitSearchResult/index.vue,src/views/bank/milkFinancing/creditQuery/detail.vue,src/views/bank/milkFinancing/creditQuery/index.vue,src/views/bank/milkFinancing/drawQuery/detail.vue,src/views/bank/milkFinancing/drawQuery/index.vue,src/views/bank/milkFinancing/historyDataQuery/index.vue,src/views/bank/milkFinancing/incrementDataQuery/index.vue,src/views/bank/milkFinancing/milkSupplier/index.vue,src/views/bank/milkFinancing/recomFuncQuery/index.vue,src/views/bank/milkFinancing/repayQuery/index.vue,src/views/bank/milkFinancing/warnHints/detail.vue,src/views/bank/milkFinancing/warnHints/index.vue,src/views/bank/milkFinancing/warnHints/orderDetail.vue,src/views/bank/milkFinancing/warnHints/productDetail.vue,src/views/bank/milkFinancing/yuqiQuery/index.vue,src/views/bank/product/downProduct/clientWarn.vue,src/views/bank/product/downProduct/creditAttachment.vue,src/views/bank/product/downProduct/index.vue,src/views/bank/product/downProduct/intoTerms.vue,src/views/bank/product/downProduct/proInfo.vue,src/views/bank/product/downProduct/productBill.vue,src/views/bank/product/downProduct/projectWarn.vue,src/views/bank/product/downProduct/quantityCredit.vue,src/views/bank/product/downProduct/sendSet.vue,src/views/bank/product/downaudiTing/detail.vue,src/views/bank/product/downaudiTing/index.vue,src/views/bank/product/milkProduct/clientWarn.vue,src/views/bank/product/milkProduct/creditAttachment.vue,src/views/bank/product/milkProduct/financialApproval.vue,src/views/bank/product/milkProduct/index.vue,src/views/bank/product/milkProduct/intoTerms.vue,src/views/bank/product/milkProduct/proInfo.vue,src/views/bank/product/milkProduct/productBill.vue,src/views/bank/product/milkProduct/projectWarn.vue,src/views/bank/product/milkProduct/quantityCredit.vue,src/views/bank/product/milkProduct/sendSet.vue,src/views/bank/product/milkProduct/setSlidebar.vue,src/views/bank/product/milkaudiTing/detail.vue,src/views/bank/product/milkaudiTing/index.vue,src/views/bank/product/upperProduct/clientWarn.vue,src/views/bank/product/upperProduct/creditAttachment.vue,src/views/bank/product/upperProduct/index.vue,src/views/bank/product/upperProduct/intoTerms.vue,src/views/bank/product/upperProduct/proInfo.vue,src/views/bank/product/upperProduct/productBill.vue,src/views/bank/product/upperProduct/projectWarn.vue,src/views/bank/product/upperProduct/quantityCredit.vue,src/views/bank/product/upperProduct/sendSet.vue,src/views/bank/product/upperProduct/setSlidebar.vue,src/views/bank/product/upperaudiTing/detail.vue,src/views/bank/product/upperaudiTing/index.vue,src/views/bank/pushManage/financing/index.vue,src/views/bank/pushManage/supplier/index.vue,src/views/bank/svg-icons/index.vue,src/views/bank/upperFinancing/approvalLimitSearchResult/index.vue,src/views/bank/upperFinancing/creditQuery/detail.vue,src/views/bank/upperFinancing/creditQuery/index.vue,src/views/bank/upperFinancing/drawQuery/detail.vue,src/views/bank/upperFinancing/drawQuery/index.vue,src/views/bank/upperFinancing/historyDataQuery/index.vue,src/views/bank/upperFinancing/incrementDataQuery/index.vue,src/views/bank/upperFinancing/invoiceHistory/index.vue,src/views/bank/upperFinancing/recomFuncQuery/index.vue,src/views/bank/upperFinancing/repayQuery/index.vue,src/views/bank/upperFinancing/supplier/index.vue,src/views/bank/upperFinancing/warnHints/detail.vue,src/views/bank/upperFinancing/warnHints/index.vue,src/views/bank/upperFinancing/warnHints/orderDetail.vue,src/views/bank/upperFinancing/warnHints/productDetail.vue,src/views/bank/upperFinancing/yuqiQuery/index.vue
+
+
+    
+    -----------------2022-01-19 10:48:16 -----------------
+    ./src/views/bank目录下共找到了110个文件，替换了7个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+src/views/bank/OfflineFinancing/repayQuery/index.vue,src/views/bank/downFinancing/creditQuery/detail.vue,src/views/bank/downFinancing/repayQuery/index.vue,src/views/bank/milkFinancing/creditQuery/detail.vue,src/views/bank/milkFinancing/milkSupplier/index.vue,src/views/bank/milkFinancing/repayQuery/index.vue,src/views/bank/upperFinancing/creditQuery/detail.vue
+    
+未匹配的：src/views/bank/OfflineFinancing/creditQuery/index.vue,src/views/bank/OfflineFinancing/drawQuery/index.vue,src/views/bank/OfflineFinancingStatistic/creditQuery/index.vue,src/views/bank/OfflineFinancingStatistic/drawQuery/index.vue,src/views/bank/OfflineFinancingStatistic/repayQuery/index.vue,src/views/bank/admin/notice/noticeDetail.vue,src/views/bank/admin/notice/noticeDetailDetail.vue,src/views/bank/admin/role/index.vue,src/views/bank/admin/taskMonitor/index.vue,src/views/bank/admin/user/detail.vue,src/views/bank/admin/user/index.vue,src/views/bank/customerIntroduction/bankDealerByStatusDetail.vue,src/views/bank/customerIntroduction/bankMilkByStatusDetail.vue,src/views/bank/customerIntroduction/bankSupplierByStatusDetail.vue,src/views/bank/customerIntroduction/index.vue,src/views/bank/customerPortal/tkQuery/index.vue,src/views/bank/customerPortal/tkQuery/notOrderDetail.vue,src/views/bank/customerPortal/tkQuery/orderDetail.vue,src/views/bank/customerPortal/tkQuery/resultQuery.vue,src/views/bank/downFinancing/approvalLimitSearchResult/index.vue,src/views/bank/downFinancing/creditQuery/index.vue,src/views/bank/downFinancing/dealer/index.vue,src/views/bank/downFinancing/drawQuery/detail.vue,src/views/bank/downFinancing/drawQuery/index.vue,src/views/bank/downFinancing/historyDataQuery/index.vue,src/views/bank/downFinancing/incrementDataQuery/index.vue,src/views/bank/downFinancing/recomFuncQuery/index.vue,src/views/bank/downFinancing/returnedMoneyAccount/detail.vue,src/views/bank/downFinancing/returnedMoneyAccount/index.vue,src/views/bank/downFinancing/specialAccess/index.vue,src/views/bank/downFinancing/warnHints/detail.vue,src/views/bank/downFinancing/warnHints/index.vue,src/views/bank/downFinancing/warnHints/orderDetail.vue,src/views/bank/downFinancing/warnHints/productDetail.vue,src/views/bank/downFinancing/yuqiQuery/index.vue,src/views/bank/errorPage/401.vue,src/views/bank/errorPage/404.vue,src/views/bank/milkFinancing/approvalLimitSearchResult/index.vue,src/views/bank/milkFinancing/creditQuery/index.vue,src/views/bank/milkFinancing/drawQuery/detail.vue,src/views/bank/milkFinancing/drawQuery/index.vue,src/views/bank/milkFinancing/historyDataQuery/index.vue,src/views/bank/milkFinancing/incrementDataQuery/index.vue,src/views/bank/milkFinancing/recomFuncQuery/index.vue,src/views/bank/milkFinancing/warnHints/detail.vue,src/views/bank/milkFinancing/warnHints/index.vue,src/views/bank/milkFinancing/warnHints/orderDetail.vue,src/views/bank/milkFinancing/warnHints/productDetail.vue,src/views/bank/milkFinancing/yuqiQuery/index.vue,src/views/bank/product/downProduct/clientWarn.vue,src/views/bank/product/downProduct/creditAttachment.vue,src/views/bank/product/downProduct/index.vue,src/views/bank/product/downProduct/intoTerms.vue,src/views/bank/product/downProduct/proInfo.vue,src/views/bank/product/downProduct/productBill.vue,src/views/bank/product/downProduct/projectWarn.vue,src/views/bank/product/downProduct/quantityCredit.vue,src/views/bank/product/downProduct/sendSet.vue,src/views/bank/product/downaudiTing/detail.vue,src/views/bank/product/downaudiTing/index.vue,src/views/bank/product/milkProduct/clientWarn.vue,src/views/bank/product/milkProduct/creditAttachment.vue,src/views/bank/product/milkProduct/financialApproval.vue,src/views/bank/product/milkProduct/index.vue,src/views/bank/product/milkProduct/intoTerms.vue,src/views/bank/product/milkProduct/proInfo.vue,src/views/bank/product/milkProduct/productBill.vue,src/views/bank/product/milkProduct/projectWarn.vue,src/views/bank/product/milkProduct/quantityCredit.vue,src/views/bank/product/milkProduct/sendSet.vue,src/views/bank/product/milkProduct/setSlidebar.vue,src/views/bank/product/milkaudiTing/detail.vue,src/views/bank/product/milkaudiTing/index.vue,src/views/bank/product/upperProduct/clientWarn.vue,src/views/bank/product/upperProduct/creditAttachment.vue,src/views/bank/product/upperProduct/index.vue,src/views/bank/product/upperProduct/intoTerms.vue,src/views/bank/product/upperProduct/proInfo.vue,src/views/bank/product/upperProduct/productBill.vue,src/views/bank/product/upperProduct/projectWarn.vue,src/views/bank/product/upperProduct/quantityCredit.vue,src/views/bank/product/upperProduct/sendSet.vue,src/views/bank/product/upperProduct/setSlidebar.vue,src/views/bank/product/upperaudiTing/detail.vue,src/views/bank/product/upperaudiTing/index.vue,src/views/bank/pushManage/financing/index.vue,src/views/bank/pushManage/supplier/index.vue,src/views/bank/svg-icons/index.vue,src/views/bank/upperFinancing/approvalLimitSearchResult/index.vue,src/views/bank/upperFinancing/creditQuery/index.vue,src/views/bank/upperFinancing/drawQuery/detail.vue,src/views/bank/upperFinancing/drawQuery/index.vue,src/views/bank/upperFinancing/historyDataQuery/index.vue,src/views/bank/upperFinancing/incrementDataQuery/index.vue,src/views/bank/upperFinancing/invoiceHistory/index.vue,src/views/bank/upperFinancing/recomFuncQuery/index.vue,src/views/bank/upperFinancing/repayQuery/index.vue,src/views/bank/upperFinancing/supplier/index.vue,src/views/bank/upperFinancing/warnHints/detail.vue,src/views/bank/upperFinancing/warnHints/index.vue,src/views/bank/upperFinancing/warnHints/orderDetail.vue,src/views/bank/upperFinancing/warnHints/productDetail.vue,src/views/bank/upperFinancing/yuqiQuery/index.vue
+
+
+    
+    -----------------2022-01-19 10:48:57 -----------------
+    ./src/views/bank目录下共找到了110个文件，替换了38个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+src/views/bank/OfflineFinancing/drawQuery/index.vue,src/views/bank/admin/taskMonitor/index.vue,src/views/bank/customerIntroduction/bankDealerByStatusDetail.vue,src/views/bank/customerIntroduction/bankMilkByStatusDetail.vue,src/views/bank/customerIntroduction/bankSupplierByStatusDetail.vue,src/views/bank/customerPortal/tkQuery/index.vue,src/views/bank/customerPortal/tkQuery/notOrderDetail.vue,src/views/bank/customerPortal/tkQuery/orderDetail.vue,src/views/bank/customerPortal/tkQuery/resultQuery.vue,src/views/bank/downFinancing/historyDataQuery/index.vue,src/views/bank/downFinancing/incrementDataQuery/index.vue,src/views/bank/downFinancing/recomFuncQuery/index.vue,src/views/bank/downFinancing/returnedMoneyAccount/detail.vue,src/views/bank/downFinancing/yuqiQuery/index.vue,src/views/bank/milkFinancing/historyDataQuery/index.vue,src/views/bank/milkFinancing/incrementDataQuery/index.vue,src/views/bank/milkFinancing/recomFuncQuery/index.vue,src/views/bank/milkFinancing/yuqiQuery/index.vue,src/views/bank/product/downProduct/clientWarn.vue,src/views/bank/product/downProduct/intoTerms.vue,src/views/bank/product/downProduct/proInfo.vue,src/views/bank/product/downProduct/projectWarn.vue,src/views/bank/product/downProduct/quantityCredit.vue,src/views/bank/product/downaudiTing/index.vue,src/views/bank/product/milkProduct/clientWarn.vue,src/views/bank/product/milkProduct/index.vue,src/views/bank/product/milkProduct/projectWarn.vue,src/views/bank/product/milkProduct/quantityCredit.vue,src/views/bank/product/milkaudiTing/index.vue,src/views/bank/product/upperProduct/clientWarn.vue,src/views/bank/product/upperProduct/proInfo.vue,src/views/bank/product/upperProduct/projectWarn.vue,src/views/bank/product/upperProduct/quantityCredit.vue,src/views/bank/product/upperaudiTing/index.vue,src/views/bank/upperFinancing/drawQuery/index.vue,src/views/bank/upperFinancing/historyDataQuery/index.vue,src/views/bank/upperFinancing/incrementDataQuery/index.vue,src/views/bank/upperFinancing/invoiceHistory/index.vue
+    
+未匹配的：src/views/bank/OfflineFinancing/creditQuery/index.vue,src/views/bank/OfflineFinancing/repayQuery/index.vue,src/views/bank/OfflineFinancingStatistic/creditQuery/index.vue,src/views/bank/OfflineFinancingStatistic/drawQuery/index.vue,src/views/bank/OfflineFinancingStatistic/repayQuery/index.vue,src/views/bank/admin/notice/noticeDetail.vue,src/views/bank/admin/notice/noticeDetailDetail.vue,src/views/bank/admin/role/index.vue,src/views/bank/admin/user/detail.vue,src/views/bank/admin/user/index.vue,src/views/bank/customerIntroduction/index.vue,src/views/bank/downFinancing/approvalLimitSearchResult/index.vue,src/views/bank/downFinancing/creditQuery/detail.vue,src/views/bank/downFinancing/creditQuery/index.vue,src/views/bank/downFinancing/dealer/index.vue,src/views/bank/downFinancing/drawQuery/detail.vue,src/views/bank/downFinancing/drawQuery/index.vue,src/views/bank/downFinancing/repayQuery/index.vue,src/views/bank/downFinancing/returnedMoneyAccount/index.vue,src/views/bank/downFinancing/specialAccess/index.vue,src/views/bank/downFinancing/warnHints/detail.vue,src/views/bank/downFinancing/warnHints/index.vue,src/views/bank/downFinancing/warnHints/orderDetail.vue,src/views/bank/downFinancing/warnHints/productDetail.vue,src/views/bank/errorPage/401.vue,src/views/bank/errorPage/404.vue,src/views/bank/milkFinancing/approvalLimitSearchResult/index.vue,src/views/bank/milkFinancing/creditQuery/detail.vue,src/views/bank/milkFinancing/creditQuery/index.vue,src/views/bank/milkFinancing/drawQuery/detail.vue,src/views/bank/milkFinancing/drawQuery/index.vue,src/views/bank/milkFinancing/milkSupplier/index.vue,src/views/bank/milkFinancing/repayQuery/index.vue,src/views/bank/milkFinancing/warnHints/detail.vue,src/views/bank/milkFinancing/warnHints/index.vue,src/views/bank/milkFinancing/warnHints/orderDetail.vue,src/views/bank/milkFinancing/warnHints/productDetail.vue,src/views/bank/product/downProduct/creditAttachment.vue,src/views/bank/product/downProduct/index.vue,src/views/bank/product/downProduct/productBill.vue,src/views/bank/product/downProduct/sendSet.vue,src/views/bank/product/downaudiTing/detail.vue,src/views/bank/product/milkProduct/creditAttachment.vue,src/views/bank/product/milkProduct/financialApproval.vue,src/views/bank/product/milkProduct/intoTerms.vue,src/views/bank/product/milkProduct/proInfo.vue,src/views/bank/product/milkProduct/productBill.vue,src/views/bank/product/milkProduct/sendSet.vue,src/views/bank/product/milkProduct/setSlidebar.vue,src/views/bank/product/milkaudiTing/detail.vue,src/views/bank/product/upperProduct/creditAttachment.vue,src/views/bank/product/upperProduct/index.vue,src/views/bank/product/upperProduct/intoTerms.vue,src/views/bank/product/upperProduct/productBill.vue,src/views/bank/product/upperProduct/sendSet.vue,src/views/bank/product/upperProduct/setSlidebar.vue,src/views/bank/product/upperaudiTing/detail.vue,src/views/bank/pushManage/financing/index.vue,src/views/bank/pushManage/supplier/index.vue,src/views/bank/svg-icons/index.vue,src/views/bank/upperFinancing/approvalLimitSearchResult/index.vue,src/views/bank/upperFinancing/creditQuery/detail.vue,src/views/bank/upperFinancing/creditQuery/index.vue,src/views/bank/upperFinancing/drawQuery/detail.vue,src/views/bank/upperFinancing/recomFuncQuery/index.vue,src/views/bank/upperFinancing/repayQuery/index.vue,src/views/bank/upperFinancing/supplier/index.vue,src/views/bank/upperFinancing/warnHints/detail.vue,src/views/bank/upperFinancing/warnHints/index.vue,src/views/bank/upperFinancing/warnHints/orderDetail.vue,src/views/bank/upperFinancing/warnHints/productDetail.vue,src/views/bank/upperFinancing/yuqiQuery/index.vue
+
+
+    
+    -----------------2022-01-19 10:55:55 -----------------
+    ./src/views/tmp目录下共找到了88个文件，替换了50个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+src/views/tmp/admin/NoticeDetail.vue,src/views/tmp/admin/enterprise/dealer.vue,src/views/tmp/admin/enterprise/index.vue,src/views/tmp/admin/enterprise/milk.vue,src/views/tmp/admin/role/index.vue,src/views/tmp/admin/user/detail.vue,src/views/tmp/admin/user/index.vue,src/views/tmp/customerIntroductionDown/detail.vue,src/views/tmp/customerIntroductionDown/loanApply.vue,src/views/tmp/customerIntroductionDown/loanApplyDetail.vue,src/views/tmp/customerIntroductionMilk/detail.vue,src/views/tmp/customerIntroductionMilk/unReadMessage.vue,src/views/tmp/customerIntroductionUpper/detail.vue,src/views/tmp/downFinancing/approvalLimitSearchResult/index.vue,src/views/tmp/downFinancing/creditApply/detail.vue,src/views/tmp/downFinancing/creditApply/index.vue,src/views/tmp/downFinancing/creditQuery/detail.vue,src/views/tmp/downFinancing/creditQuery/index.vue,src/views/tmp/downFinancing/financingProduct/index.vue,src/views/tmp/downFinancing/hkQuery/index.vue,src/views/tmp/downFinancing/tkQuery/index.vue,src/views/tmp/downFinancing/yuqiQuery/index.vue,src/views/tmp/milkFinancing/approvalLimitSearchResult/index.vue,src/views/tmp/milkFinancing/creditApply/detail.vue,src/views/tmp/milkFinancing/creditApply/index.vue,src/views/tmp/milkFinancing/creditQuery/benefitLog.vue,src/views/tmp/milkFinancing/creditQuery/detail.vue,src/views/tmp/milkFinancing/creditQuery/index.vue,src/views/tmp/milkFinancing/creditQuery/seeDetail.vue,src/views/tmp/milkFinancing/financingProduct/index.vue,src/views/tmp/milkFinancing/hkQuery/index.vue,src/views/tmp/milkFinancing/nfcs/businessDetail.vue,src/views/tmp/milkFinancing/nfcs/businessNotification.vue,src/views/tmp/milkFinancing/nfcs/index.vue,src/views/tmp/milkFinancing/nfcs/personDetail.vue,src/views/tmp/milkFinancing/nfcs/personNotification.vue,src/views/tmp/milkFinancing/nfcs/personUpdate.vue,src/views/tmp/milkFinancing/tkQuery/index.vue,src/views/tmp/milkFinancing/yuqiQuery/index.vue,src/views/tmp/select/index.vue,src/views/tmp/upperFinancing/approvalLimitSearchResult/index.vue,src/views/tmp/upperFinancing/creditApply/detail.vue,src/views/tmp/upperFinancing/creditApply/index.vue,src/views/tmp/upperFinancing/creditQuery/detail.vue,src/views/tmp/upperFinancing/creditQuery/index.vue,src/views/tmp/upperFinancing/financingProduct/index.vue,src/views/tmp/upperFinancing/hkQuery/index.vue,src/views/tmp/upperFinancing/invoiceHistory/index.vue,src/views/tmp/upperFinancing/tkQuery/index.vue,src/views/tmp/upperFinancing/yuqiQuery/index.vue
+    
+未匹配的：src/views/tmp/admin/noticeDetailDetail/noticeDetailDetail.vue,src/views/tmp/customerIntroductionDown/index.vue,src/views/tmp/customerIntroductionMilk/LoanApplyCreate.vue,src/views/tmp/customerIntroductionMilk/index.vue,src/views/tmp/customerIntroductionUpper/index.vue,src/views/tmp/downFinancing/tkQuery/detail.vue,src/views/tmp/errorPage/401.vue,src/views/tmp/errorPage/404.vue,src/views/tmp/layout/AppMain.vue,src/views/tmp/layout/Headerbar.vue,src/views/tmp/layout/Layout.vue,src/views/tmp/layout/LayoutSetPrepay.vue,src/views/tmp/layout/LayoutTwo.vue,src/views/tmp/layout/Levelbar.vue,src/views/tmp/layout/Navbar.vue,src/views/tmp/layout/SetPrepay.vue,src/views/tmp/layout/Sidebar.vue,src/views/tmp/layout/SidebarItem.vue,src/views/tmp/layout/TabsView.vue,src/views/tmp/layout/setLayout.vue,src/views/tmp/login/authredirect.vue,src/views/tmp/login/dealerRegister.vue,src/views/tmp/login/forgetPassword.vue,src/views/tmp/login/forgetPasswordLoginName.vue,src/views/tmp/login/forgetPasswordMobile.vue,src/views/tmp/login/identify.vue,src/views/tmp/login/index.vue,src/views/tmp/login/milkRegister.vue,src/views/tmp/login/next.vue,src/views/tmp/login/register.vue,src/views/tmp/login/registerDetail.vue,src/views/tmp/login/socialsignin.vue,src/views/tmp/login/supplierRegister.vue,src/views/tmp/milkFinancing/nfcs/businessUpdate.vue,src/views/tmp/milkFinancing/tkQuery/UpdateLoanApply.vue,src/views/tmp/milkFinancing/tkQuery/detail.vue,src/views/tmp/svg-icons/index.vue,src/views/tmp/upperFinancing/tkQuery/detail.vue
+
+
+    
+    -----------------2022-01-19 10:56:13 -----------------
+    ./src/views/tmp目录下共找到了88个文件，替换了4个。
+    替换前：
+    <template>
+  <div class="app-container calendar-list-container"> 
+    替换后：
+    <template>
+ <d2-container>
+  <div class="app-container calendar-list-container">
+    替换前：
+    </template>
+<script>
+    替换后：
+    </d2-container>
+</template>
+
+<script>
+    
+src/views/tmp/admin/noticeDetailDetail/noticeDetailDetail.vue,src/views/tmp/customerIntroductionMilk/LoanApplyCreate.vue,src/views/tmp/downFinancing/tkQuery/detail.vue,src/views/tmp/milkFinancing/tkQuery/UpdateLoanApply.vue
+    
+未匹配的：src/views/tmp/admin/NoticeDetail.vue,src/views/tmp/admin/enterprise/dealer.vue,src/views/tmp/admin/enterprise/index.vue,src/views/tmp/admin/enterprise/milk.vue,src/views/tmp/admin/role/index.vue,src/views/tmp/admin/user/detail.vue,src/views/tmp/admin/user/index.vue,src/views/tmp/customerIntroductionDown/detail.vue,src/views/tmp/customerIntroductionDown/index.vue,src/views/tmp/customerIntroductionDown/loanApply.vue,src/views/tmp/customerIntroductionDown/loanApplyDetail.vue,src/views/tmp/customerIntroductionMilk/detail.vue,src/views/tmp/customerIntroductionMilk/index.vue,src/views/tmp/customerIntroductionMilk/unReadMessage.vue,src/views/tmp/customerIntroductionUpper/detail.vue,src/views/tmp/customerIntroductionUpper/index.vue,src/views/tmp/downFinancing/approvalLimitSearchResult/index.vue,src/views/tmp/downFinancing/creditApply/detail.vue,src/views/tmp/downFinancing/creditApply/index.vue,src/views/tmp/downFinancing/creditQuery/detail.vue,src/views/tmp/downFinancing/creditQuery/index.vue,src/views/tmp/downFinancing/financingProduct/index.vue,src/views/tmp/downFinancing/hkQuery/index.vue,src/views/tmp/downFinancing/tkQuery/index.vue,src/views/tmp/downFinancing/yuqiQuery/index.vue,src/views/tmp/errorPage/401.vue,src/views/tmp/errorPage/404.vue,src/views/tmp/layout/AppMain.vue,src/views/tmp/layout/Headerbar.vue,src/views/tmp/layout/Layout.vue,src/views/tmp/layout/LayoutSetPrepay.vue,src/views/tmp/layout/LayoutTwo.vue,src/views/tmp/layout/Levelbar.vue,src/views/tmp/layout/Navbar.vue,src/views/tmp/layout/SetPrepay.vue,src/views/tmp/layout/Sidebar.vue,src/views/tmp/layout/SidebarItem.vue,src/views/tmp/layout/TabsView.vue,src/views/tmp/layout/setLayout.vue,src/views/tmp/login/authredirect.vue,src/views/tmp/login/dealerRegister.vue,src/views/tmp/login/forgetPassword.vue,src/views/tmp/login/forgetPasswordLoginName.vue,src/views/tmp/login/forgetPasswordMobile.vue,src/views/tmp/login/identify.vue,src/views/tmp/login/index.vue,src/views/tmp/login/milkRegister.vue,src/views/tmp/login/next.vue,src/views/tmp/login/register.vue,src/views/tmp/login/registerDetail.vue,src/views/tmp/login/socialsignin.vue,src/views/tmp/login/supplierRegister.vue,src/views/tmp/milkFinancing/approvalLimitSearchResult/index.vue,src/views/tmp/milkFinancing/creditApply/detail.vue,src/views/tmp/milkFinancing/creditApply/index.vue,src/views/tmp/milkFinancing/creditQuery/benefitLog.vue,src/views/tmp/milkFinancing/creditQuery/detail.vue,src/views/tmp/milkFinancing/creditQuery/index.vue,src/views/tmp/milkFinancing/creditQuery/seeDetail.vue,src/views/tmp/milkFinancing/financingProduct/index.vue,src/views/tmp/milkFinancing/hkQuery/index.vue,src/views/tmp/milkFinancing/nfcs/businessDetail.vue,src/views/tmp/milkFinancing/nfcs/businessNotification.vue,src/views/tmp/milkFinancing/nfcs/businessUpdate.vue,src/views/tmp/milkFinancing/nfcs/index.vue,src/views/tmp/milkFinancing/nfcs/personDetail.vue,src/views/tmp/milkFinancing/nfcs/personNotification.vue,src/views/tmp/milkFinancing/nfcs/personUpdate.vue,src/views/tmp/milkFinancing/tkQuery/detail.vue,src/views/tmp/milkFinancing/tkQuery/index.vue,src/views/tmp/milkFinancing/yuqiQuery/index.vue,src/views/tmp/select/index.vue,src/views/tmp/svg-icons/index.vue,src/views/tmp/upperFinancing/approvalLimitSearchResult/index.vue,src/views/tmp/upperFinancing/creditApply/detail.vue,src/views/tmp/upperFinancing/creditApply/index.vue,src/views/tmp/upperFinancing/creditQuery/detail.vue,src/views/tmp/upperFinancing/creditQuery/index.vue,src/views/tmp/upperFinancing/financingProduct/index.vue,src/views/tmp/upperFinancing/hkQuery/index.vue,src/views/tmp/upperFinancing/invoiceHistory/index.vue,src/views/tmp/upperFinancing/tkQuery/detail.vue,src/views/tmp/upperFinancing/tkQuery/index.vue,src/views/tmp/upperFinancing/yuqiQuery/index.vue
+
+
+    
