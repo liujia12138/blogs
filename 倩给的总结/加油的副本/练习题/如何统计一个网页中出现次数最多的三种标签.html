@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<span></span>
+		<span></span>
+		<span></span>
+		<div></div>
+		<div></div>
+		<script type="text/javascript">
+			// 出现次数最多的一个元素
+			let elements = document.getElementsByTagName('*');
+
+			console.log(elements, '888');
+
+			let obj = {};
+			for (let i = 0; i < elements.length; i++) {
+				const {
+					tagName
+				} = elements[i];
+				obj[tagName] = (obj[tagName] || 0) + 1
+			}
+
+
+			let max = 0;
+			let maxElem = "";
+			for (let key in obj) {
+				console.log(key, '00');
+				if (obj[key] > max) {
+					maxElem = key;
+					max = obj[key]
+				}
+			}
+
+			console.log(`最多出现的一个元素是${maxElem}出现的次数是${max}`);
+
+
+
+			// 多少种html标签
+			let elem = document.querySelectorAll('*');
+			// 统计标签总数
+			const {
+				size
+			} = new Set([...elem].map(tag => tag.tagName))
+
+
+			// 统计出现最多的三种标签以及出现的次数
+			const allElements = document.querySelectorAll('*');
+
+			const all = Object.entries([...allElements]
+					.map(tag => tag.tagName)
+					.reduce((pre, cur)=>{
+					  pre[cur] = (pre[cur] || 0) + 1;
+					  return pre;
+					}, {}))
+				console.log(all.sort((a,b) => b[1]-a[1]).slice(0,3).map(item => {
+					return `${item[0]}:${item[1]}次`
+				}).join(','),'999');
+				
+				
+				Promise.resolve(1).then(res => {
+					console.log(res)
+					return 2
+				}).catch(err => {
+					return 3
+				}).then(res => {
+					console.log(res)
+				})
+				
+				
+				function deepClone(target){
+				    if(target !== null && typeof target === 'object'){
+				        let result = Object.prototype.toString.call(target) === "[object Array]" ? [] : {};
+				        for (let k in target){
+				            if (target.hasOwnProperty(k)) {
+				                result[k] = deepClone(target[k])
+				            }
+				        }
+				        return result;
+				    }else{
+				        return target;
+				    }
+				}
+				
+				const obj1 = {
+					a:1,
+					b:2,
+					c:3,
+					d:4
+				}
+				const obj2  = deepClone(obj1)
+				console.log(obj2,obj2.a = 3,obj1,'0000');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>B</title>
+		<button type="button" onclick="sendA()">发送A页面消息</button>
+		<button type="button" onclick="sendA()">点击我使页面奔溃</button>
+	</head>
+	<body onbeforeunload="return close()">
+		<h1>B 页面</h1>
+		<span></span>
+		<script>
+			window.name = 'B'
+
+			function sendA() {
+				let targetWindow = window.opener
+				targetWindow.postMessage('Hello A', "http://127.0.0.1:8001");
+			}
+
+			function close() {
+				let targetWindow = window.opener
+				targetWindow.postMessage('Hello 4444', "http://127.0.0.1:8001");
+			}
+
+
+
+
+			function handleCrash() {
+				var total = "";
+				for (var i = 0; i < 1000000; i++) {
+					var dom = document.createElement('span');
+					document.getElementsByTagName("body")[0].appendChild(dom)
+				}
+			}
+			
+			
+			if('serviceWorker' in navigator){
+				
+				navigator.serviceWorker.register('service-worker.js',{
+					scope:'./'
+				}).then((registration) => {
+					
+					if(navigator.serviceWorker.controller !== null){
+						let sessionId = "uuid()";
+						console.log(sessionId,'---2');
+						let heartbeat = () => {
+							console.log("页面发送state：running") //running
+							navigator.serviceWorker.controller.postMessage({
+								type:"running",
+								id:sessionId,
+								data:{} //附加信息，如果页面crash，上报的附加数据
+							})
+						}
+						
+						window.addEventListener("beforeunload",() => {
+							console.log("页面发送state：clear") //clear
+							navigator.serviceWorker.controller.postMessage({
+								type:'clear',
+								id:sessionId
+							})
+						});
+						
+						setInterval(heartbeat,50000)
+					}
+				}).catch((error) => {
+					throw Error('error')
+				})
+			}else{
+				throw Error('not support service worker')
+			}
+		</script>
+	</body>
+</html>

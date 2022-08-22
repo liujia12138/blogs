@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			.header{
+				height: 100px;
+				background: pink;
+			}
+			
+			.footer{
+				height: 200px;
+				background: #FFC0CB;
+			}
+			.container{
+				display: flex;
+				flex-direction: column; //使整体布局从上倒下排列
+				height: 100vh;
+			}
+			.main{
+				flex-grow: 1; //自动填充剩余的空间
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header"></div>
+			<div class="main"></div>
+			<div class="footer"></div>
+		</div>
+		
+		<script type="text/javascript">
+			const promise = new Promise((resolve, reject) => {
+			  console.log(1);
+			  resolve('success')
+			  console.log(2);
+			});
+			promise.then(() => {
+			  console.log(3);
+			});
+			console.log(4);
+			
+		</script>
+	</body>
+</html>

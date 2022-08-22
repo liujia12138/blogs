@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let arr = [{
+					id: 1,
+					name: '部门1',
+					pid: 0
+				},
+				{
+					id: 2,
+					name: '部门2',
+					pid: 1
+				},
+				{
+					id: 3,
+					name: '部门3',
+					pid: 1
+				},
+				{
+					id: 4,
+					name: '部门4',
+					pid: 3
+				},
+				{
+					id: 5,
+					name: '部门5',
+					pid: 4
+				},
+			]
+
+			// 遍历的
+			// const getChildren = (data, result, pid) => {
+			// 	for (let item of data) {
+			// 		console.log(item, '000');
+			// 		if (item.pid === pid) {
+			// 			const newItem = { ...item,
+			// 				children: []
+			// 			};
+			// 			result.push(newItem);
+			// 			getChildren(data, newItem.children, item.id)
+			// 		}
+			// 	}
+			// }
+
+
+			// const result = []
+			// getChildren(arr, result, 0)
+
+
+
+			// 最优性能
+			function arrayToTree(items) {
+				const result = []; // 存放结果集
+				const itemMap = {}; // 
+				
+				for (const item of items) {
+					const { id, pid } = item;
+
+					itemMap[id] = {
+						...item,
+						children: !itemMap[id] ? [] : itemMap[id]['children']
+					}
+
+					const treeItem = itemMap[id];
+
+					if (pid === 0) {
+						result.push(treeItem);
+					} else {
+						if (!itemMap[pid]) {
+							itemMap[pid] = {
+								children: [],
+							}
+						}
+						itemMap[pid].children.push(treeItem)
+					}
+
+				}
+				
+				return result;
+			}
+
+			console.log(arrayToTree(arr));
+			
+			
+			
+			function curry(fn, args) {
+				var length = fn.length;
+				var args = args || [];
+				
+				return function() {
+					newArgs = args.concat(Array.prototype.slice.call(arguments));
+					// console.log(arguments,'888812122');
+					if(newArgs.length < length) {
+						return curry.call(this,fn,newArgs);
+					} else {
+						return fn.apply(this,newArgs)
+					}
+				}
+			}
+			
+			function multiFn(a, b, c,d) {
+				return a + b + c+d
+			}
+			
+			var multi = curry(multiFn);
+		
+			 console.log(multi(2,3,4,6))
+			 
+			// multi(2) (3,4)
+			// multi(2,3)(4)
+		</script>
+	</body>
+</html>
