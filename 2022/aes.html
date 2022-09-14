@@ -36,7 +36,7 @@
       return result
     }
     console.log(
-      encryption({ data: { username: 'admin', password: '123456' }, key: 'pigxpigxpigxpigx', param: ['password'] })
+      encryption({ data: { username: 'admin', password: '123456' }, key: '1234123412ABCDEF', param: ['password'] })
     )
     /**
      * 解密
@@ -51,8 +51,8 @@
         let iv = key
         const decrypt = CryptoJS.AES.decrypt(result[ele], key, {
           iv: iv,
-          mode: CryptoJS.mode.CBC,
-          padding: CryptoJS.pad.Pkcs7
+          mode: CryptoJS.mode.CFB,
+          padding: CryptoJS.pad.NoPadding
         })
         result[ele] = decrypt.toString(CryptoJS.enc.Utf8).toString()
       })
@@ -61,8 +61,8 @@
 
     console.log(
       decryption({
-        data: { username: 'admin', password: '9WF4HgpDTsLcR4m8espVMQ==' },
-        key: 'pigxpigxpigxpigx',
+        data: { username: 'admin', password: 'wTcp2iOf' },
+        key: '1234123412ABCDEF',
         param: ['password']
       })
     )
