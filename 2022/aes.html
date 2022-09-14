@@ -51,21 +51,17 @@
         let iv = key
         const decrypt = CryptoJS.AES.decrypt(result[ele], key, {
           iv: iv,
-          mode: CryptoJS.mode.CFB,
-          padding: CryptoJS.pad.NoPadding
+          mode: CryptoJS.mode.CBC,
+          padding: CryptoJS.pad.Pkcs7
         })
-        console.log(decrypt)
-        // const decryptStr = decrypt.toString(CryptoJS.enc.Latin1)
-        result[ele] = decrypt.toString(CryptoJS.enc.Latin1).toString()
-        // result[ele] = CryptoJS.enc.Latin1.stringify(decrypt).toString()
+        result[ele] = decrypt.toString(CryptoJS.enc.Utf8).toString()
       })
       return result
     }
 
-    
     console.log(
       decryption({
-        data: { username: 'admin', password: '"JFat0Zdc"' },
+        data: { username: 'admin', password: '9WF4HgpDTsLcR4m8espVMQ==' },
         key: 'pigxpigxpigxpigx',
         param: ['password']
       })
@@ -80,7 +76,6 @@
       let encrypted = CryptoJS.AES.encrypt(srcs, key, { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 })
       return encrypted.ciphertext.toString().toUpperCase()
     }
-
 
     //解密方法
     function Decrypt(word) {
