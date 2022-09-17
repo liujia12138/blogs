@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1,
+      .box2 {
+        width: 110px;
+        height: 100px;
+        background-color: lightpink;
+        text-align: center;
+      }
+      .box1 {
+        margin-bottom: 150px;
+      }
+      .box2 {
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <br /><br /><br />
+
+    <style>
+      .parent {
+        width: 300px;
+        background: turquoise;
+        border: 5px solid #000;
+        overflow: hidden;
+      }
+      .float {
+        width: 50%;
+        height: 100px;
+        background: wheat;
+        float: left;
+      }
+    </style>
+    <div class="parent">
+      <div class="float">我是一个浮动元素</div>
+    </div>
+
+    <br /><br /><br /><br /><br />
+
+    <div>
+      <div style="height: 100px; width: 100px; float: left; background: lightblue; opacity: 0.7">
+        我是一个浮动元素
+      </div>
+      <!-- <div style="width: 200px; height: 200px; background: red"> -->
+        <!-- 我没有设置浮动, 也没有触发 BFC  -->
+      <!-- </div> -->
+       <div style="width: 200px; height: 200px; background: red;overflow: hidden;">
+        我触发了BFC
+      </div>
+    </div>
+  </body>
+</html>
