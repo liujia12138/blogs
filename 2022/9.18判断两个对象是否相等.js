@@ -1,3 +1,4 @@
+console.log(fn)
 function isObjectValueEqual(obj1, obj2) {
   // 1.判断引用地址是否一致，一致则直接返回true
   if (Object.is(obj1, obj2)) return true
@@ -21,6 +22,13 @@ function isObjectValueEqual(obj1, obj2) {
   }
   return true
 }
+// function fn (){
+//   return 'fn'
+// }
+var fn = 'aaa'
+var varFunction = function () {
+  return 'ss'
+}
 const obj1 = {
   name: '张三',
   age: 16,
@@ -37,7 +45,7 @@ const obj2 = {
 const obj3 = obj1
 
 const obj4 = {
-  name:'李四',
+  name: '李四',
   age: 20,
   skills: ['抽烟', '喝酒']
 }
@@ -49,6 +57,5 @@ const obj5 = {
 }
 
 console.log(isObjectValueEqual(obj3, obj1))
-
 
 console.log(obj4 == obj5)
