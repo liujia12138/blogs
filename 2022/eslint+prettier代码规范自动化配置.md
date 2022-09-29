@@ -324,3 +324,18 @@ module.exports = {
   }
 }
 ```
+
+husky配置
+```
+ "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+```
