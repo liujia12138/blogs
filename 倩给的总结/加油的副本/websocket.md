@@ -79,7 +79,7 @@
 	socket是应用层与TCP/IP协议通信的中间软件抽象层，他是一组接口，而websocket协议是一个完整的应用层协议，拥有一套完整的API
 	
 #### 服务端实时通信有哪些方法
-	1.ajax轮询
+	1.ajax轮询(短轮询)
 	2.long polling长轮询
 	3.websocket
 	
